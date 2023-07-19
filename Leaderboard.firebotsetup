@@ -1,0 +1,133 @@
+{
+  "name": "Leaderboard",
+  "description": "Display a Bot Currency Leaderboard on stream.",
+  "version": 1,
+  "author": "arblane",
+  "components": {
+    "commands": [
+      {
+        "active": true,
+        "simple": false,
+        "sendCooldownMessage": true,
+        "cooldownMessage": "This command is still on cooldown for: {timeLeft}",
+        "cooldown": {},
+        "effects": {
+          "id": "99c9fc2a-2462-447a-88a8-b1c9114d38e9",
+          "list": [
+            {
+              "id": "5c25ad00-2656-11ee-8ae0-8d510060da65",
+              "type": "firebot:run-effect-list",
+              "active": true,
+              "listType": "preset",
+              "presetListArgs": {},
+              "effectList": {
+                "list": [],
+                "id": "5c284510-2656-11ee-8ae0-8d510060da65"
+              },
+              "presetListId": "4e13fdc0-2656-11ee-8ae0-8d510060da65"
+            }
+          ]
+        },
+        "restrictionData": {
+          "restrictions": [
+            {
+              "id": "a51c1880-265d-11ee-83e6-23362b1bd18f",
+              "type": "firebot:followcheck",
+              "value": "arblane"
+            }
+          ],
+          "mode": "all",
+          "sendFailMessage": true,
+          "failMessage": "Sorry, you cannot use this command because: {reason}"
+        },
+        "aliases": [],
+        "sortTags": [],
+        "treatQuotedTextAsSingleArg": false,
+        "trigger": "!leaderboard",
+        "description": "Check the leaderboard!",
+        "hidden": false,
+        "ignoreBot": true,
+        "id": "f2282360-2650-11ee-8ae0-8d510060da65",
+        "createdBy": "arblane",
+        "createdAt": "2023-07-19T12:25:59-04:00",
+        "count": 37,
+        "lastEditBy": "arblane",
+        "lastEditAt": "2023-07-19T14:26:04-04:00",
+        "subCommands": [
+          {
+            "active": true,
+            "id": "8aa16f55-25e8-4636-b252-ca09cad00c43",
+            "type": "Custom",
+            "arg": "rank",
+            "regex": false,
+            "fallback": false,
+            "restrictionData": {
+              "restrictions": [
+                {
+                  "id": "99250be0-265d-11ee-83e6-23362b1bd18f",
+                  "type": "firebot:followcheck",
+                  "value": "arblane"
+                }
+              ],
+              "mode": "all",
+              "sendFailMessage": true,
+              "useCustomFailMessage": false,
+              "failMessage": "Sorry, you cannot use this command because: {reason}"
+            },
+            "effects": {
+              "list": [
+                {
+                  "id": "421c77c0-265d-11ee-83e6-23362b1bd18f",
+                  "type": "firebot:chat",
+                  "active": true,
+                  "chatter": "Bot",
+                  "message": "$username your BotThings rank is $currencyRank[BotThings, $username]! Good effort!",
+                  "sendAsReply": true
+                }
+              ],
+              "id": "38fc7ff0-265d-11ee-83e6-23362b1bd18f"
+            },
+            "description": "Check your BotThings Rank!",
+            "cooldown": {
+              "user": 300
+            }
+          }
+        ]
+      }
+    ],
+    "counters": [],
+    "currencies": [],
+    "effectQueues": [],
+    "events": [],
+    "eventGroups": [],
+    "hotkeys": [],
+    "presetEffectLists": [
+      {
+        "name": "Leaderboard",
+        "effects": {
+          "list": [
+            {
+              "id": "5358de40-2656-11ee-8ae0-8d510060da65",
+              "type": "firebot:html",
+              "active": true,
+              "enterAnimation": "fadeIn",
+              "exitAnimation": "fadeOut",
+              "inbetweenAnimation": "none",
+              "html": "$evalVars[$readFile[E:\\Streaming\\Assets\\Overlays\\leaderboard\\leaderboard.html]]",
+              "length": "10"
+            }
+          ],
+          "id": "4e1424d0-2656-11ee-8ae0-8d510060da65"
+        },
+        "args": [],
+        "sortTags": [],
+        "id": "4e13fdc0-2656-11ee-8ae0-8d510060da65"
+      }
+    ],
+    "timers": [],
+    "viewerRoles": [],
+    "quickActions": []
+  },
+  "requireCurrency": true,
+  "importQuestions": []
+}

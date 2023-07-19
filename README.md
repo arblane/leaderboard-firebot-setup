@@ -5,10 +5,10 @@ Firebot setup for displaying a Bot Currency Leaderboard on stream.
 
 # Install
 + To install, download:
-  + blerp.firebotsetup
+  + Leaderboard.firebotsetup
   + leaderboard.html
 + Import setup for Firebot by going to Settings > Setups > Import Setup.
-  + Choose the file "blerp.firebotsetup" from the location you just downloaded it to, then click Import setup. 
+  + Choose the file "Leaderboard.firebotsetup" from the location you just downloaded it to, then click Import setup. 
   + You will need to edit the preset effect to change the location of the html file.
   + You will need to specify your bot currency during import
 

@@ -9,6 +9,13 @@
     .gradient-background { background: linear-gradient(300deg,#8412c3,#aa5dd5,#52057c); background-size: 180% 180%; animation: gradient-animation 18s ease infinite; }
     @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
 </style>
+<script>
+    // When userAvatar has an error replace source
+    $('img').on("error", function() {
+        // $(this).attr('src', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+        $(this).hide();
+    });
+</script>
 <div class="center">
     <div class="roundback gradient-background">
         <div class="text-container"><h1>BotThings Leaderboard - Top 5</h1></div>

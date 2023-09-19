@@ -26,3 +26,5 @@ Firebot setup for displaying a Bot Currency Leaderboard on stream.
   + the colors and position to your liking
   + the html file location
   + bot currency
+  + duration of display
+  + failback image in img tags needs customizing

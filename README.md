@@ -3,26 +3,33 @@
 # Description
 Firebot setup for displaying a Bot Currency Leaderboard on stream.
 
+# Compatibility
++ Firebot 5.58.0+
+
 # Install
-+ To install, download:
++ Download
   + Leaderboard.firebotsetup
   + leaderboard.html
-+ Import setup for Firebot by going to Settings > Setups > Import Setup.
-  + Choose the file "Leaderboard.firebotsetup" from the location you just downloaded it to, then click Import setup. 
++ Import the downloaded firebotsetup file
   + You will need to edit the preset effect to change the location of the html file.
   + You will need to specify your bot currency during import
 
 # Usage
 
+## Overlay
++ This firebotsetp uses the firebot overlay
+
 ## Requirements for Chat
 + Must be following the channel
 
 ## Commands for Chat
-+ !leaderboard (Displays on screen Top 5)
-+ !leaderboard rank (Displays the rank of the chatter)
++ !leaderboard
+  + Displays on screen Top 5
++ !leaderboard rank
+  + Displays the rank of the chatter
 
 ## Streamer Info
-+ Customize:
++ Customize
   + the colors and position to your liking
   + the html file location
   + bot currency

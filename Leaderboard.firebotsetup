@@ -1,7 +1,7 @@
 {
   "name": "Leaderboard",
   "description": "Display a Bot Currency Leaderboard on stream.",
-  "version": 1,
+  "version": 1.1,
   "author": "arblane",
   "components": {
     "commands": [
@@ -92,7 +92,8 @@
               "user": 300
             }
           }
-        ]
+        ],
+        "type": "custom"
       }
     ],
     "counters": [],
@@ -114,7 +115,7 @@
               "exitAnimation": "fadeOut",
               "inbetweenAnimation": "none",
               "html": "$evalVars[$readFile[E:\\Streaming\\Assets\\Overlays\\leaderboard\\leaderboard.html]]",
-              "length": "10"
+              "length": "15"
             }
           ],
           "id": "4e1424d0-2656-11ee-8ae0-8d510060da65"

@@ -1,63 +1,142 @@
 <style>
-    .center { position: absolute; top: 30%; left: 30%; }
-    .container { display: flex; }
-    .image-container { height: 55px;}
-    .image-container, .text-container { display: inline-block; vertical-align: middle; color: white; }
-    .image-container img { border-radius: 25px; width: 50px; height: 50px; }
-    .box { display: flex; flex-direction: column; align-items: center; padding: 5px; }
-    .roundback { border-radius: 25px; background: linear-gradient(300deg,#8412c3,#aa5dd5,#52057c); font-family: Arial, sans-serif; text-align: center; color: white; padding: 10px; width: 750px; height: 300px; position: fixed; margin: 0 auto; }
-    .gradient-background { background: linear-gradient(300deg,#8412c3,#aa5dd5,#52057c); background-size: 180% 180%; animation: gradient-animation 18s ease infinite; }
-    @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+    .center {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .image-container {
+        height: 55px;
+    }
+
+    .image-container,
+    .text-container {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+    }
+
+    .image-container img {
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .roundback {
+        border-radius: 25px;
+        background: linear-gradient(300deg, #8412c3, #aa5dd5, #52057c);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        width: 750px;
+        height: 300px;
+        position: fixed;
+        margin: 0 auto;
+    }
+
+    .gradient-background {
+        background: linear-gradient(300deg, #8412c3, #aa5dd5, #52057c);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+    }
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 </style>
 <script>
     // When userAvatar has an error replace source
-    $('img').on("error", function() {
+    $('img').on("error", function () {
         // $(this).attr('src', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
         $(this).hide();
     });
 </script>
 <div class="center">
     <div class="roundback gradient-background">
-        <div class="text-container"><h1>BotThings Leaderboard - Top 5</h1></div>
+        <div class="text-container">
+            <h1>BotThings Leaderboard - Top 5</h1>
+        </div>
         <div class="container">
             <div class="box">
-                <div class="text-container"><h2>1st</h2></div>
+                <div class="text-container">
+                    <h2>1st</h2>
+                </div>
                 <div class="image-container">
                     <img src="$userAvatarUrl[$topCurrencyUser[BotThings, 1, username]]" alt="profile image">
                 </div>
-                <div class="text-container"><h2>$topCurrencyUser[BotThings, 1, username]</h2></div>
+                <div class="text-container">
+                    <h2>$topCurrencyUser[BotThings, 1, username]</h2>
+                </div>
                 <div class="text-container"><b>$topCurrencyUser[BotThings, 1, amount]</b></div>
             </div>
             <div class="box">
-                <div class="text-container"><h2>2nd</h2></div>
+                <div class="text-container">
+                    <h2>2nd</h2>
+                </div>
                 <div class="image-container">
                     <img src="$userAvatarUrl[$topCurrencyUser[BotThings, 2, username]]" alt="profile image">
                 </div>
-                <div class="text-container"><h2>$topCurrencyUser[BotThings, 2, username]</h2></div>
+                <div class="text-container">
+                    <h2>$topCurrencyUser[BotThings, 2, username]</h2>
+                </div>
                 <div class="text-container"><b>$topCurrencyUser[BotThings, 2, amount]</b></div>
             </div>
             <div class="box">
-                <div class="text-container"><h2>3rd</h2></div>
+                <div class="text-container">
+                    <h2>3rd</h2>
+                </div>
                 <div class="image-container">
                     <img src="$userAvatarUrl[$topCurrencyUser[BotThings, 3, username]]" alt="profile image">
                 </div>
-                <div class="text-container"><h2>$topCurrencyUser[BotThings, 3, username]</h2></div>
+                <div class="text-container">
+                    <h2>$topCurrencyUser[BotThings, 3, username]</h2>
+                </div>
                 <div class="text-container"><b>$topCurrencyUser[BotThings, 3, amount]</b></div>
             </div>
             <div class="box">
-                <div class="text-container"><h2>4th</h2></div>
+                <div class="text-container">
+                    <h2>4th</h2>
+                </div>
                 <div class="image-container">
                     <img src="$userAvatarUrl[$topCurrencyUser[BotThings, 4, username]]" alt="profile image">
                 </div>
-                <div class="text-container"><h2>$topCurrencyUser[BotThings, 4, username]</h2></div>
+                <div class="text-container">
+                    <h2>$topCurrencyUser[BotThings, 4, username]</h2>
+                </div>
                 <div class="text-container"><b>$topCurrencyUser[BotThings, 4, amount]</b></div>
             </div>
-                <div class="box">
-                <div class="text-container"><h2>5th</h2></div>
+            <div class="box">
+                <div class="text-container">
+                    <h2>5th</h2>
+                </div>
                 <div class="image-container">
                     <img src="$userAvatarUrl[$topCurrencyUser[BotThings, 5, username]]" alt="profile image">
                 </div>
-                <div class="text-container"><h2>$topCurrencyUser[BotThings, 5, username]</h2></div>
+                <div class="text-container">
+                    <h2>$topCurrencyUser[BotThings, 5, username]</h2>
+                </div>
                 <div class="text-container"><b>$topCurrencyUser[BotThings, 5, amount]</b></div>
             </div>
         </div>
